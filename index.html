@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Megabyteshop - Sua loja de periféricos</title>
+    <link rel="stylesheet" href="./lib/cdn.jsdelivr.net_npm_bootstrap@5.3.2_dist_css_bootstrap.min.css">
+    <style>
+        body {
+            background-color: gainsboro;
+        }
+
+        header {
+            background-color: rgb(44, 44, 44);
+            color: rgb(255, 17, 0);
+            position: sticky;
+            left: 0;
+            top: 0;
+            z-index: 2;
+        }
+
+        footer {
+            background-color: rgb(44, 44, 44);
+            color: rgb(255, 17, 0);
+            height: 56px;
+            margin-top: 24px;
+        }
+
+        .nav-link {
+            color: rgb(255, 17, 0);
+        }
+
+        .nav-pills .nav-link.active {
+            background-color: black;
+        }
+
+        img {
+            height: 362px;
+        }
+
+        .card-header {
+            background-color: rgb(44, 44, 44);
+            color: rgb(255, 17, 0);
+        }
+
+        section{
+            padding: 70px 0;
+        }
+
+        #section2 {
+            border-top: 1px solid ;
+        }
+
+        .contato textarea {
+            resize: none;
+        }
+
+        form {
+            max-width: 300px;
+            background-color: rgba(44, 44, 44, 0.1);
+            border: 1px solid rgb(44, 44, 44);
+        }
+
+        @media screen and (max-width: 639px) {
+            .container {
+                max-width: 90%;
+            }
+
+            header .container {
+                display: contents
+            }
+
+            .row {
+                display: block;
+            }
+
+            .col-4 {
+                width: 100%;
+            }
+
+            #contato {
+                margin: auto;
+            }
+
+        }
+    @media screen and (max-width: 1023px) and (min-width: 640px) and (orientation: portrait) {
+        .container {
+            max-width: 90%;
+        }
+
+        .row {
+            display: grid;
+            grid-template-columns: repeat(2, 49%);
+        }
+
+        .col-4 {
+                width: 100%;
+            }
+
+        #contato {
+            margin: auto;
+            max-width: 50%;
+        }
+
+    }
+    </style>
+</head>
+<body>
+    <header id="cabecalho" class="mb-4">
+        <div class="container">
+            <div class="navbar navbar-expand-lg justify-content-between">
+                <h1>
+                    Megabyteshop
+                </h1>
+                <nav class="justify-content-end">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Início</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#section1">Mouses</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#section2">Teclados</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="3000" class="carousel-item active">
+                    <img class="d-block w-100" src="https://media.istockphoto.com/id/1410763977/pt/foto/gamer-playing-online-video-game-at-home.webp?s=1024x1024&w=is&k=20&c=W4x7MljSFb5VmklygI4x_wbzhpSU4Lx4m9W5xym_xfw=" alt="">
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="https://media.istockphoto.com/id/1461453147/pt/foto/gamer-playing-videogame.webp?s=1024x1024&w=is&k=20&c=2Joet7IdD3rSf-qhHQ8XWyoHC_rOL3xTGQqNVlYowjI=" alt="">
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="https://media.istockphoto.com/id/1436422412/pt/foto/young-hispanic-man-streamer-playing-video-game-with-winner-expression-at-gaming-room.webp?s=1024x1024&w=is&k=20&c=Jzahuse-e8aqj_8OMn3n1cnCcpnj7_r2RrNKr_E1BCo=" alt="">
+                </div>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <button type="button" data-bs-slide="prev" data-bs-target="#carousel-exemplo" class="carousel-control-prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="container" data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <section id="section1" class="">
+            <h3 class="p-2">Mouses</h3>
+            <div class="row">
+                <div class="col-4 d-flex justify-content-center p-2">
+                    <div class="card">
+                        <div class="card-header">
+                            Mouse Gamer
+                        </div>
+                        <img src="./img/mouse/mouse1.jpg" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Mouse</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus.</p>
+                            <strong>R$150,00</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 d-flex justify-content-center p-2">
+                    <div class="card">
+                        <div class="card-header">
+                            Mouse Gamer
+                        </div>
+                        <img src="./img/mouse/mouse2.jpg" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Mouse</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus.</p>
+                            <strong>R$150,00</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 d-flex justify-content-center p-2">
+                    <div class="card">
+                        <div class="card-header">
+                            Mouse Gamer
+                        </div>
+                        <img src="./img/mouse/mouse3.webp" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Mouse</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus.</p>
+                            <strong>R$150,00</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 d-flex justify-content-center p-2">
+                    <div class="card">
+                        <div class="card-header">
+                            Mouse Gamer
+                        </div>
+                        <img src="./img/mouse/mouse4.webp" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Mouse</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus.</p>
+                            <strong>R$150,00</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 d-flex justify-content-center p-2">
+                    <div class="card">
+                        <div class="card-header">
+                            Mouse Gamer
+                        </div>
+                        <img src="./img/mouse/mouse5.jpg" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Mouse</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus.</p>
+                            <strong>R$150,00</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 d-flex justify-content-center p-2">
+                    <div class="card">
+                        <div class="card-header">
+                            Mouse Gamer
+                        </div>
+                        <img src="./img/mouse/mouse6.jpg" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Mouse</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus.</p>
+                            <strong>R$150,00</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section2" class="mt-5">
+            <h3 class="p-2">Teclados</h3>
+            <div class="row">
+                <div class="col-4 d-flex justify-content-center p-2">
+                    <div class="card">
+                        <div class="card-header">
+                            Teclado Gamer
+                        </div>
+                        <img src="./img/teclado/teclado1.webp" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Mouse</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus.</p>
+                            <strong>R$150,00</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 d-flex justify-content-center p-2">
+                    <div class="card">
+                        <div class="card-header">
+                            Teclado Gamer
+                        </div>
+                        <img src="./img/teclado/teclado2.webp" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Mouse</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus.</p>
+                            <strong>R$150,00</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 d-flex justify-content-center p-2">
+                    <div class="card">
+                        <div class="card-header">
+                            Teclado Gamer
+                        </div>
+                        <img src="./img/teclado/teclado3.webp" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Mouse</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus.</p>
+                            <strong>R$150,00</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 d-flex justify-content-center p-2">
+                    <div class="card">
+                        <div class="card-header">
+                            Teclado Gamer
+                        </div>
+                        <img src="./img/teclado/teclado4.jpg" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Mouse</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus.</p>
+                            <strong>R$150,00</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 d-flex justify-content-center p-2">
+                    <div class="card">
+                        <div class="card-header">
+                            Teclado Gamer
+                        </div>
+                        <img src="./img/teclado/teclado5.jpg" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Mouse</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus.</p>
+                            <strong>R$150,00</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 d-flex justify-content-center p-2">
+                    <div class="card">
+                        <div class="card-header">
+                            Teclado Gamer
+                        </div>
+                        <img src="./img/teclado/teclado6.webp" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Mouse</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus.</p>
+                            <strong>R$150,00</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <form id="contato" class="w-100 p-1">
+            <h2>Contato</h2>
+            <div class="container">
+                <div class="contato">
+                    <label class="d-flex" for="name" id="nome">Nome </label>
+                    <input class="w-100 mb-3" type="text" id="nome">
+                </div>
+                <div class="contato">
+                    <label class="d-flex" for="tel" id="telefone">Telefone </label>
+                    <input class="w-100 mb-3"type="tel" id="telefone">
+                </div>
+                <div class="contato">
+                    <label class="d-flex" for="email" id="email">E-mail </label>
+                    <input class="w-100 mb-3"type="email" id="email">
+                </div>
+                <div class="contato">
+                    <label class="d-flex">Digite sua mensagem</label>
+                    <textarea class="w-100"></textarea>
+                </div>
+            </div>
+        </form>
+    </div>
+    <footer class="align-items-center d-flex">
+        <div class="container">
+            &copy; Mebabyteshop - Todos os direitos reservados 2023
+        </div>
+    </footer>
+
+    <script src="./lib/cdn.jsdelivr.net_npm_bootstrap@5.3.2_dist_js_bootstrap.bundle.min.js"></script>
+</body>
+</html>
